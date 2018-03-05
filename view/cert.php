@@ -103,6 +103,16 @@ use B7KP\Library\Lang;
 								{
 								?>
 								<tr>
+									</p>
+							<p class="topspace-md wclass min" style="display: none;">
+								<big><b><?php echo Lang::get("weighted");?></b></big>
+								<a href="#exp"><i class="ti-help"></i></a>
+								<br>
+								<b><?php echo Lang::get("weight");?></b><br/>
+								<?php echo Lang::get("gold").": <b>".$weight["g"]."</b>";?>
+								<?php echo Lang::get("plat").": <b>".$weight["p"]."</b>";?>
+								<?php echo Lang::get("diam").": <b>".$weight["d"]."</b>";?>
+								
 									<td class="text-center"><?php echo $i;?></td>
 									<td>
 										<a href=<?php echo $itemurl.F::fixLFM($key)."/".$type;?>>
